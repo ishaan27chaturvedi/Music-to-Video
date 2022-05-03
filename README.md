@@ -1,6 +1,6 @@
 # Music-to-Video
 
-Creating music videos from song and their lyrics using VQGANs + CLIP + WAV2CLIP + Laplacian Segmentation
+Creating music videos from song and their lyrics using VQGANs + CLIP + WAV2CLIP + Laplacian Segmentation. You can see the Google Colab Version [here](https://drive.google.com/drive/folders/1YA8zab3ewMGk1F-hHwky8FTspJxdRqLJ?usp=sharing)
 
 ## Description
 
