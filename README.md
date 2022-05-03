@@ -4,18 +4,28 @@ Creating music videos from song and their lyrics using VQGANs + CLIP + WAV2CLIP 
 
 ## Description
 
-This study is about making an improvement on the existing Music to Video generation framework, [MUSIC2VIDEO: AUTOMATIC GENERATION OF MUSIC VIDEO WITH FUSION OF AUDIO AND TEXT](https://arxiv.org/pdf/2201.03809.pdf). The framework uses text (lyrics) and audio (song) to generate images, which are converted to videos. 
+This study is about making an improvement on the existing Music to Video generation framework, [MUSIC2VIDEO: AUTOMATIC GENERATION OF MUSIC VIDEO WITH FUSION OF AUDIO AND TEXT](https://arxiv.org/pdf/2201.03809.pdf). The original paper's github can be found [here](https://github.com/joeljang/music2video). The framework uses text (lyrics) and audio (song) to generate images, which are converted to videos. <br>
 In terms of making improvements to the existing framework, the two concepts are tackled in different aspects. The original video was very stagnant, so I decided to add aesthetic modifiers and video effects like zooming and panning. While experimenting with these effects, it looked random and did not add meaning to the video. Therefore I segmented the audio to understand the repetitive parts of a song, using this information to create patterns with these effects in sync with the rhythm and beats of the song. 
+
+
+## Outputs
+* [version 1](https://www.youtube.com/watch?v=b3xOfeInlOg)
+* [version 2](https://www.youtube.com/watch?v=0KMGvdu1IjY&t=6s)
+* [version 3](https://youtu.be/ytscibWpAwQ)
+
+
+## Evaluation & Survey
+A survey was conducted to understand if this survey made any improvements. The survey can be found [here](https://docs.google.com/forms/d/1RwW-xCahbAb0tJPz5G5CKOssUIVeKCi9Ptn1KR1iCok/edit) and results of the survey can be found [here - graphical](https://docs.google.com/forms/d/1RwW-xCahbAb0tJPz5G5CKOssUIVeKCi9Ptn1KR1iCok/viewanalytics) and [here - csv](https://docs.google.com/spreadsheets/d/1F_T9DaMp5OdqYO6hEuGw6-t3tHiEVry-Dgf5-51V-nM/edit?usp=sharing). A total of 54 people of different ages, from various countries and professions, participated in this survey.
 
 
 ## Getting Started
 
 ### Dependencies
 
-* VQGAN - Transformers
-* CLIP
-* WAV2CLIP
-* Laplacian Segmentation
+* [VQGAN - Transformers](https://compvis.github.io/taming-transformers/)
+* [CLIP](https://openai.com/blog/clip/)
+* [WAV2CLIP](https://arxiv.org/abs/2110.11499)
+* [Laplacian Segmentation](http://bmcfee.github.io/papers/ismir2014_spectral.pdf)
 * Librosa
 * Pytorch
 * Stegano
@@ -27,6 +37,7 @@ In terms of making improvements to the existing framework, the two concepts are 
 ### Installing
 
 * This is Google Colab Notebook that can be imported into your colab or jupyter environment
+* Make sure to download the lyrics (csv) and the song (mp3) and place them in an appropriate directory
 
 ### Executing program
 
